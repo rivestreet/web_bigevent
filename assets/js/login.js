@@ -46,6 +46,7 @@ $("#form_reg").on("submit", (e) => {
             password: $("#form_reg [name=password").val(),
         },
         success: (res) => {
+          // console.log(res);
             if (res.status !== 0) return layer.msg(res.message);
             layer.msg("注册成功！");
             // 注册成功后跳转到登录界面
