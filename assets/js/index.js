@@ -29,7 +29,7 @@
         //按需渲染头像
         if(user.user_pic !== null) {
             //设置图片头像
-            $('.layui-nav-img').attr('src',user_pic).show();
+            $('.layui-nav-img').attr('src',user.user_pic).show();
             $('.text-avatar').hide()
         }
         else {
