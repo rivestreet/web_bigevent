@@ -8,6 +8,7 @@ $.ajaxPrefilter((option) => {
     // 该includes()方法确定数组是否在其条目中包含某个值，返回true或 false酌情。
     if(option.url.includes('/my/')) {
       option.headers = {
+        // Authorization: <type> <credentials></credentials>
         Authorization: localStorage.getItem("token"),
       };
     };

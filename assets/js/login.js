@@ -26,7 +26,7 @@ $(function() {
     //3.两者进行判断
     //4.如果不一致，提示消息
     const pwd = $('#form_reg [name=password]').val()
-    if(pwd !==value) return "两次密码不一致"
+    if(pwd !== value) return "两次密码不一致"
   }
  })
 
